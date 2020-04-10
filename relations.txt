@@ -1,0 +1,9 @@
+public function users() {
+   return $this->belongsToMany(User::class,'roles_users');    
+}
+
+public function roles() {
+   return $this->belongsToMany(Role::class,'roles_users');    
+}
+
+Il doit avoir une relation roles_users
